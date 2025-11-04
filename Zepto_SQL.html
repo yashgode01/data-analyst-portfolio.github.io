@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Zepto Sales Analysis - SQL | Yash Gode</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      scroll-behavior: smooth;
+    }
+    .section-title {
+      @apply text-3xl font-bold text-center mb-6 text-blue-700;
+    }
+  </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+  <!-- Header -->
+  <header class="bg-gradient-to-r from-blue-700 to-indigo-800 text-white p-4 flex flex-col sm:flex-row items-center justify-between shadow-md">
+    <div class="flex items-center space-x-3">
+      <h1 class="text-2xl font-bold tracking-wide">Zepto Sales Analysis in SQL</h1>
+    </div>
+  </header>
+
+  <!-- Project Description -->
+  <section class="p-8 text-center bg-white shadow-sm">
+    <!-- <h2 class="section-title">Project Overview</h2> -->
+    <p class="max-w-2xl mx-auto text-gray-600 mb-6 text-left">
+      This project performs Exploratory Data Analysis (EDA) on Zepto’s fictional retail sales dataset using SQL. The dataset includes key attributes such as transaction details, customer demographics, and product information. Through SQL queries, the analysis uncovers sales trends, customer purchasing behavior, and category-wise performance to derive actionable business insights.
+    </p>
+    
+    <!-- Video -->
+    <div class="flex justify-center">
+      <iframe class="w-full sm:w-3/4 lg:w-1/2 aspect-video rounded-lg shadow-lg"
+        src="https://www.youtube.com/embed/YOUR_VIDEO_ID" 
+        title="Zepto Sales" allowfullscreen>
+      </iframe>
+    </div>
+
+    <a href="ppt\Zepto_EDA.pptx" class="mt-6 inline-block bg-blue-600 text-white px-6 py-3 rounded-lg shadow hover:bg-blue-700 transition">
+      View Project
+    </a>
+  </section>
+
+  <!-- Storytelling Section -->
+  <section id="story" class="p-8 bg-gray-100">
+    <h2 class="section-title text-center" style="font-size:21px; margin-bottom: 2%;">Storytelling with KPIs</h2>
+    <div class="grid gap-8 md:grid-cols-2 max-w-6xl mx-auto">
+      <!-- KPI 1 -->
+      <div class="bg-white p-6 rounded-2xl shadow hover:shadow-md transition">
+        <h3 class="text-xl font-semibold text-blue-700 mb-2">1. Total number of products? </h3>
+        <img src="images/Zepto_Sql1.jpg" alt="Loan Stats" class="rounded-lg w-full">
+        <p class="text-gray-600 mb-4 mt-2">Our analysis begins with understanding the scale of the dataset. Zepto’s retail catalog consists of 3,728 product entries, representing a rich and diverse inventory across multiple categories. This indicates a broad product portfolio suitable for analyzing sales and inventory behavior across different product types.
+       </p>
+      </div>
+
+      <!-- KPI 2 -->
+      <div class="bg-white p-6 rounded-2xl shadow hover:shadow-md transition">
+        <h3 class="text-xl font-semibold text-blue-700 mb-2">2. Unique Product Categories</h3>
+        <img src="images/Zepto_Sql2.jpg" alt="Revolving Bal" class="rounded-lg w-full">
+        <p class="text-gray-600 mb-4 mt-2">The dataset spans 14 unique product categories, from essentials like Cooking Essentials and Fruits & Vegetables to indulgent options such as Chocolates & Candies and Ice Creams & Desserts. This diversity allows us to study customer preferences across both necessity-driven and impulse-buy segments.
+       </p>
+      </div>
+
+      <!-- KPI 3 -->
+      <div class="bg-white p-6 rounded-2xl shadow hover:shadow-md transition">
+        <h3 class="text-xl font-semibold text-blue-700 mb-2">3. Top 5 Product Categories</h3>
+        <img src="images/Zepto_Sql3.jpg" class="rounded-lg w-full">
+        <p class="text-gray-600 mt-2">When we look at product distribution, Cooking Essentials and Munchies lead with 512 items each. This shows Zepto’s strong focus on daily-use items and snackable products, catering to quick convenience needs. The next popular groups — Packaged Food, Desserts, and Candies — reflect customer demand for ready-to-eat and indulgent products, showing Zepto’s balanced mix of necessity and delight.
+        </p>
+      </div>
+
+      <!-- KPI 4 -->
+      <div class="bg-white p-6 rounded-2xl shadow hover:shadow-md transition">
+        <h3 class="text-xl font-semibold text-blue-700 mb-2">4. Average Discount by Category</h3>
+        <img src="images/Zepto_Sql4.jpg" class="rounded-lg w-full">
+        <p class="text-gray-600 mb-4 mt-2">Discount patterns tell a fascinating story. Fruits & Vegetables lead with the highest average discount, perhaps to attract daily shoppers or clear perishable inventory quickly. Meats and Eggs follow closely, suggesting promotional strategies to boost protein-category sales. Mid-range discounts on Packaged Food and Desserts highlight moderate competitiveness in these non-perishable segments.
+        </p>
+      </div>
+
+      <!-- KPI 5 -->
+      <div class="bg-white p-6 rounded-2xl shadow hover:shadow-md transition">
+        <h3 class="text-xl font-semibold text-blue-700 mb-2">5. Total Available Quantity Per Category</h3>
+        <img src="images/Zepto_Sql5.jpg" class="rounded-lg w-full">
+        <p class="text-gray-600 mb-4 mt-2">Availability data reflects stock management priorities. Cooking Essentials and Munchies again top the chart with the highest available quantities, emphasizing Zepto’s commitment to ensuring consistent supply of high-demand products. On the other hand, Meats & Eggs and Fruits & Vegetables have relatively lower availability, likely due to shorter shelf life and faster turnover.
+        </p>
+      </div>
+
+      <!-- KPI 6 -->
+      <div class="bg-white p-6 rounded-2xl shadow hover:shadow-md transition">
+        <h3 class="text-xl font-semibold text-blue-700 mb-2">6. Out-of-Stock Products</h3>
+        <img src="images/Zepto_Sql6.jpg" class="rounded-lg w-full">
+        <p class="text-gray-600 mb-4 mt-2">A quick look at the out-of-stock items reveals many belong to Fruits & Vegetables and Cooking Essentials. Items like Carrot, Beetroot, Moong Sprouts, and Madhur Sugar are missing from inventory. This suggests high demand and fast stock depletion in everyday essentials, highlighting areas where inventory replenishment needs improvement.
+        </p>
+      </div>
+
+      <!-- KPI 7 -->
+      <div class="bg-white p-6 rounded-2xl shadow hover:shadow-md transition">
+        <h3 class="text-xl font-semibold text-blue-700 mb-2">7. Price difference for each product </h3>
+        <img src="images/Zepto_Sql7.jpg" class="rounded-lg w-full">
+        <p class="text-gray-600 mb-4 mt-2">Premium products like olive oil and baby care items enjoy heavy absolute discounts—possibly due to promotional campaigns or price wars in premium grocery segments. This reflects how Zepto leverages large markdowns to attract high-value customers.
+        </p>
+      </div>
+
+      <!-- KPI 8 -->
+      <div class="bg-white p-6 rounded-2xl shadow hover:shadow-md transition">
+        <h3 class="text-xl font-semibold text-blue-700 mb-2">8. Average product Weight by Category </h3>
+        <img src="images/Zepto_Sql9.jpg" class="rounded-lg w-full">
+        <p class="text-gray-600 mb-4 mt-2">Heavier items dominate Cooking Essentials and Munchies, aligning with bulk purchase patterns. On the other hand, lightweight categories like Biscuits and Personal Care are designed for quick, frequent buys—highlighting Zepto’s product mix balance.
+        </p>
+      </div>
+
+      <!-- KPI 9 -->
+      <div class="bg-white p-6 rounded-2xl shadow hover:shadow-md transition">
+        <h3 class="text-xl font-semibold text-blue-700 mb-2">9. Total Inventory Value per category </h3>
+        <img src="images/Zepto_Sql10.jpg" class="rounded-lg w-full">
+        <p class="text-gray-600 mb-4 mt-2">Cooking Essentials and Munchies form the financial backbone of Zepto’s inventory. These categories not only dominate in quantity but also hold the greatest share of overall value—signifying their central role in revenue generation.
+        </p>
+      </div>
+
+      <!-- KPI 10 -->
+      <div class="bg-white p-6 rounded-2xl shadow hover:shadow-md transition">
+        <h3 class="text-xl font-semibold text-blue-700 mb-2">10. Products with 0% Discount</h3>
+        <img src="images/Zepto_Sql11.jpg" class="rounded-lg w-full">
+        <p class="text-gray-600 mb-4 mt-2">Core staples such as Maggi, salt, and edible oils are priced at full MRP—indicating strong brand dominance and consistent demand. These non-discounted products ensure stable margins and form Zepto’s reliable revenue stream.
+        </p>
+      </div>
+
+      <!-- KPI 11 -->
+      <div class="bg-white p-6 rounded-2xl shadow hover:shadow-md transition">
+        <h3 class="text-xl font-semibold text-blue-700 mb-2">11. Weight Category vs Average Discount </h3>
+        <img src="images/Zepto_Sql12.jpg" class="rounded-lg w-full">
+        <p class="text-gray-600 mb-4 mt-2">Heavier products receive the highest average discounts, likely to encourage bulk buying and faster movement of large inventory. This strategy aligns with Zepto’s goal of promoting high-volume sales through attractive discounts.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Conclusion -->
+  <section class="p-8 bg-white text-center shadow-inner">
+    <h2 class="section-title" style="font-size:18px;">Conclusion</h2>
+    <p class="max-w-3xl mx-auto text-gray-700 leading-relaxed text-left mt-2">
+      The dataset spans 3,728 products across 14 categories, reflecting Zepto’s strong coverage across daily essentials, snacks, and premium products.<br><br>
+
+      Cooking Essentials and Munchies emerge as the most dominant categories both in stock availability and inventory value, confirming their central role in overall sales performance.<br><br>
+
+      Zepto applies higher discounts on perishable and premium products like fruits, vegetables, meats, and olive oil to stimulate sales and manage stock turnover effectively.<br><br>
+
+      Frequent out-of-stock items in essentials like sugar, sprouts, and vegetables highlight potential demand-supply mismatches and opportunities to improve replenishment efficiency.<br><br>
+
+      Non-discounted core items such as Maggi, salt, and oils indicate strong brand pull and steady consumer loyalty, allowing Zepto to maintain consistent profit margins on these staples.
+    </p>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gradient-to-r from-blue-700 to-indigo-800 text-white text-center p-4 mt-8">
+    <p>Created by <span class="font-semibold">Yash Gode</span></p>
+  </footer>
+
+</body>
+</html>

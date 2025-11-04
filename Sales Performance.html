@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sales Performance Dashboard | Yash Gode</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      scroll-behavior: smooth;
+    }
+    .section-title {
+      @apply text-3xl font-bold text-center mb-6 text-blue-700;
+    }
+  </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+  <!-- Header -->
+  <header class="bg-gradient-to-r from-blue-700 to-indigo-800 text-white p-4 flex flex-col sm:flex-row items-center justify-between shadow-md">
+    <div class="flex items-center space-x-3">
+      <h1 class="text-2xl font-bold tracking-wide">Sales Performance Report</h1>
+    </div>
+  </header>
+
+  <!-- Project Description -->
+  <section class="p-8 text-center bg-white shadow-sm">
+    <!-- <h2 class="section-title">Project Overview</h2> -->
+    <p class="max-w-2xl mx-auto text-gray-600 mb-6 text-left">
+      A data-driven Power BI project designed to analyze overall sales performance across customers, products, and sales teams. The dashboard provides insights into total revenue, profit, and units sold, highlights top-performing salespersons and regions, and identifies key growth opportunities through interactive visualizations and KPIs.
+    </p>
+    
+    <!-- Video -->
+    <div class="flex justify-center">
+      <iframe class="w-full sm:w-3/4 lg:w-1/2 aspect-video rounded-lg shadow-lg"
+        src="https://www.youtube.com/embed/YOUR_VIDEO_ID" 
+        title="Sales Project Demo" allowfullscreen>
+      </iframe>
+    </div>
+
+    <a href="#story" class="mt-6 inline-block bg-blue-600 text-white px-6 py-3 rounded-lg shadow hover:bg-blue-700 transition">
+      View Project
+    </a>
+  </section>
+
+  <!-- Storytelling Section -->
+  <section id="story" class="p-8 bg-gray-100">
+    <h2 class="section-title text-center" style="font-size:21px; margin-bottom: 2%;">Storytelling with KPIs</h2>
+    <div class="grid gap-8 md:grid-cols-2 max-w-6xl mx-auto">
+      <!-- KPI 1 -->
+      <div class="bg-white p-6 rounded-2xl shadow hover:shadow-md transition">
+        <h3 class="text-xl font-semibold text-blue-700 mb-2">1. Executive Summary</h3>
+        <img src="images/Executive Summary.JPG" alt="Sales Growth" class="rounded-lg w-full">
+        <p class="text-gray-600 mb-4">This dashboard provides an overall snapshot of business performance.
+
+The company generated a total revenue of 23M, incurred total costs of 17M, and achieved a gross profit of 6M with 123K units sold. The bar chart shows top-performing companies like Horizon Foods and Stellar Retail, which contribute majorly to total revenue. The industry analysis highlights that Retail and Engineering sectors are key contributors.Monthly trends indicate consistent growth across industries over time. 
+<br><br>
+Key Insight:
+Strong revenue generation across multiple industries with Retail leading the chart.
+<br><br>
+Consistent upward trend shows stable market performance.</p>
+      </div>
+
+      <!-- KPI 2 -->
+      <div class="bg-white p-6 rounded-2xl shadow hover:shadow-md transition">
+        <h3 class="text-xl font-semibold text-blue-700 mb-2">2. Product Analysis</h3>
+        <img src="images/Product Analysis.JPG" alt="Revenue Region" class="rounded-lg w-full">
+        <p class="text-gray-600 mb-4">This slide breaks down revenue by product category and individual products.
+Core Processing leads as the highest-revenue category, followed by Output Devices and System & Power.
+The product-level analysis shows that Graphics Processing Unit (GPU) and Central Processing Unit (CPU) are top sellers with over 4M+ revenue each.
+Monthly trend lines indicate steady performance, with slight peaks in March and July.
+<br><br>
+Key Insight:
+High-margin technical products like GPUs and CPUs are major growth drivers, indicating strong demand for high-performance computing components.</p>
+      </div>
+
+      <!-- KPI 3 -->
+      <div class="bg-white p-6 rounded-2xl shadow hover:shadow-md transition">
+        <h3 class="text-xl font-semibold text-blue-700 mb-2">3. Customer Analysis</h3>
+        <img src="images/Customer Analysis.JPG" class="rounded-lg w-full">
+        <p class="text-gray-600 mb-4">Our overall business performance shows a Total Revenue of 23M, Total Cost of 17M, resulting in a Gross Profit of 6M, with 123K units sold.
+The Retail industry is the top revenue contributor, followed by Engineering and Finance sectors.
+Among customers, Horizon Foods (4.2M), Stellar Retail (3.5M), and Quantum Dynamics (3.3M) are the top three revenue-generating clients.
+The trend analysis shows steady revenue growth across industries, with a consistent upward pattern from March to August 2025.
+<br><br>
+Key Insight:
+The business has a diverse and balanced customer base, but Retail and Engineering clients dominate overall sales.
+<br><br>
+Strengthening relationships with top customers and replicating success in underperforming sectors can drive further growth.</p>
+      </div>
+
+      <!-- KPI 4 -->
+      <div class="bg-white p-6 rounded-2xl shadow hover:shadow-md transition">
+        <h3 class="text-xl font-semibold text-blue-700 mb-2">4. Sales Team Performance</h3>
+        <img src="images/Sales Team Performance.JPG" alt="sales performance" class="rounded-lg w-full">
+        <p class="text-gray-600 mb-4">This dashboard highlights the overall sales contribution by team members and cities.
+We achieved a total revenue of 23M, total cost of 17M, and a gross profit of 6M, with 123K units sold.
+The donut chart shows that Noah Sanchez is the top performer contributing 6.7M, followed by Emma Thompson (4.4M) and Olivia Wilson (3.9M).
+The bar chart shows city-wise revenue — Miami leads with 6.7M, followed by Boston and New York.
+This indicates that both individual and regional performance are aligned, with top performers driving results from high-revenue cities.</p>
+
+Key Insight:
+Top three salespersons (Noah, Emma, and Olivia) generate more than half of total sales.
+<br><br>
+Focusing on replicating their successful strategies across other team members and cities can further improve revenue distribution and performance balance.
+      </div>
+    </div>
+  </section>
+
+  <!-- Conclusion -->
+  <section class="p-8 bg-white text-center shadow-inner">
+    <h2 class="section-title" style="font-size:18px;">Conclusion</h2>
+    <p class="max-w-3xl mx-auto text-gray-700 leading-relaxed text-left">
+      The sales analytics project provided actionable insights into revenue patterns, product demand, and regional growth.
+      <br><br>  
+      Data-driven dashboards helped identify sales bottlenecks and supported strategic decision-making, resulting in improved forecasting accuracy and better sales planning.
+    </p>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gradient-to-r from-blue-700 to-indigo-800 text-white text-center p-4 mt-8">
+    <p>Created by <span class="font-semibold">Yash Gode</span></p>
+  </footer>
+
+</body>
+</html>

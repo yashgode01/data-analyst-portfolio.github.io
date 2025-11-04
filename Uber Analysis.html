@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Uber Analysis | Yash Gode</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      scroll-behavior: smooth;
+    }
+
+    .rounded-lg{
+      height:250px;
+      width:250px;
+    }
+
+    .section-title {
+      @apply text-3xl font-bold text-center mb-6 text-blue-700;
+    }
+  </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+  <!-- Header -->
+  <header class="bg-gradient-to-r from-blue-700 to-indigo-800 text-white p-4 flex flex-col sm:flex-row items-center justify-between shadow-md">
+    <div class="flex items-center space-x-3">
+      <h1 class="text-2xl font-bold tracking-wide">Uber Analysis</h1>
+    </div>
+  </header>
+
+  <!-- Project Description -->
+  <section class="p-8 text-center bg-white shadow-sm">
+    <!-- <h2 class="section-title">Project Overview</h2> -->
+    <p class="max-w-2xl mx-auto text-gray-600 mb-6 text-left">
+      Overview of trip performance showing total bookings, revenue, vehicle preferences, payment methods, and city-wise distribution to identify key trends and insights.
+    </p>
+    
+    <!-- Video -->
+    <div class="flex justify-center">
+      <iframe class="w-full sm:w-3/4 lg:w-1/2 aspect-video rounded-lg shadow-lg"
+        src="https://drive.google.com/file/d/1JE72e3Vk5nUHFnZMxNhCdsAD-Ap1QhJ9/preview" 
+        title="Sales Project Demo" allowfullscreen>
+      </iframe>
+    </div>
+
+    <a href="https://public.tableau.com/views/UberTripAnalysis_17449103225210/UberDashboard?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link" class="mt-6 inline-block bg-blue-600 text-white px-6 py-3 rounded-bt shadow hover:bg-blue-700 transition">
+      View Project
+    </a>
+  </section>
+
+  <!-- Storytelling Section -->
+  <section id="story" class="p-8 bg-gray-100">
+    <h2 class="section-title text-center" style="font-size:21px; margin-bottom: 2%;">Storytelling with KPIs</h2>
+    <div class="grid gap-8 md:grid-cols-2 max-w-6xl mx-auto">
+      <!-- KPI 1 -->
+      <div class="bg-white p-6 rounded-2xl shadow hover:shadow-md transition">
+        <h3 class="text-xl font-semibold text-blue-700 mb-2">1. Total bookings by payment type</h3>
+        <img src="images/Uber_Slide1.jpg" alt="Payment type" class="rounded-lg w-full">
+        <p class="text-gray-600 mb-4 mt-2">Uber Pay is the most frequently used payment method, indicating strong adoption of the platform’s native wallet system.<br><br>
+        Google Pay has the lowest number of bookings, suggesting it is less preferred among users in the dataset.
+       </p>
+      </div>
+
+      <!-- KPI 2 -->
+      <div class="bg-white p-6 rounded-2xl shadow hover:shadow-md transition">
+        <h3 class="text-xl font-semibold text-blue-700 mb-2">2. Vehicle type analysis</h3>
+        <img src="images/Uber_Slide2.jpg" alt="Vehicle type" class="rounded-lg w-full">
+        <p class="text-gray-600 mb-4 mt-2">Uber X is the most preferred ride type with the highest number of bookings, total revenue, and total trip distance.<br><br>
+        Uber Green has the lowest number of bookings, lowest total revenue, and least distance covered, indicating limited usage.<br><br>
+        Uber Black leads in average booking amount, reflecting its premium pricing.<br><br>
+        Uber Co has the lowest average booking amount, possibly due to shorter or more budget-friendly trips.
+       </p>
+      </div>
+
+      <!-- KPI 3 -->
+      <div class="bg-white p-6 rounded-2xl shadow hover:shadow-md transition">
+        <h3 class="text-xl font-semibold text-blue-700 mb-2">3. Total bookings by City</h3>
+        <img src="images/Uber_Slide3.jpg" class="rounded-lg w-full">
+        <p class="text-gray-600 mb-4 mt-2">Manhattan records the highest number of bookings, reflecting its high population density and urban mobility needs.<br><br>
+        New Jersey has the lowest number of bookings, indicating lower Uber usage in that region during the selected period
+        </p>
+      </div>
+
+      <!-- KPI 4 -->
+      <div class="bg-white p-6 rounded-2xl shadow hover:shadow-md transition">
+        <h3 class="text-xl font-semibold text-blue-700 mb-2">4. Total bookings by vehicle type</h3>
+        <img src="images/Uber_Slide4.jpg" class="rounded-lg w-full">
+        <p class="text-gray-600 mb-4 mt-2">Uber X leads with the highest number of bookings, indicating it is the most preferred and widely used ride option.<br><br>
+        Uber Green records the lowest number of bookings, suggesting limited adoption of electric or eco-friendly ride options in the current dataset.
+        </p>
+      </div>
+
+      <!-- KPI 5 -->
+      <div class="bg-white p-6 rounded-2xl shadow hover:shadow-md transition">
+        <h3 class="text-xl font-semibold text-blue-700 mb-2">5. Fare amount by location</h3>
+        <img src="images/Uber_Slide5.jpg" class="rounded-lg w-full">
+        <p class="text-gray-600 mb-4 mt-2">The total fare amount generated across different locations, helping identify high-revenue and low-revenue zones based on trip data.<br><br>
+        Highlights areas with high demand and higher fare contribution.<br><br>
+        Useful for revenue optimization, surge planning, and marketing strategies in high-performing zones.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Conclusion -->
+  <section class="p-8 bg-white text-center shadow-inner">
+    <h2 class="section-title" style="font-size:18px;">Conclusion</h2>
+    <p class="max-w-3xl mx-auto text-gray-700 leading-relaxed text-left mt-2">
+      The analysis shows that Uber completed 103,728 trips generating $1.55M in revenue with an average booking value of $14.98. Manhattan records the highest number of bookings, indicating strong demand in central city areas. UberX is the most preferred vehicle type, accounting for the majority of rides, while Uber Pay is the dominant payment method, showing users’ preference for digital transactions.<br><br>
+
+      Suggestions:<br>
+
+      Increase driver availability and promotions in high-demand zones like Manhattan to maximize revenue.
+      <br>
+      Encourage adoption of digital payments through discounts or loyalty rewards.
+      <br>
+      Optimize pricing or introduce offers for low-performing areas to boost trip volume.
+      <br>
+      Maintain focus on UberX services while promoting premium rides Uber Black, Comfort for higher margin growth.
+
+
+    </p>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gradient-to-r from-blue-700 to-indigo-800 text-white text-center p-4 mt-8">
+    <p>Created by <span class="font-semibold">Yash Gode</span></p>
+  </footer>
+
+</body>
+</html>

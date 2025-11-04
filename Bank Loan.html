@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bank Dashboard | Yash Gode</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      scroll-behavior: smooth;
+    }
+    .section-title {
+      @apply text-3xl font-bold text-center mb-6 text-blue-700;
+    }
+  </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+  <!-- Header -->
+  <header class="bg-gradient-to-r from-blue-700 to-indigo-800 text-white p-4 flex flex-col sm:flex-row items-center justify-between shadow-md">
+    <div class="flex items-center space-x-3">
+      <h1 class="text-2xl font-bold tracking-wide">Bank Loan for Customers</h1>
+    </div>
+  </header>
+
+  <!-- Project Description -->
+  <section class="p-8 text-center bg-white shadow-sm">
+    <!-- <h2 class="section-title">Project Overview</h2> -->
+    <p class="max-w-2xl mx-auto text-gray-600 mb-6 text-left">
+      A visual summary of overall loan performance, borrower status, and repayment trends across years, states, and customer categories.
+    </p>
+    
+    <!-- Video -->
+    <div class="flex justify-center">
+      <iframe class="w-full sm:w-3/4 lg:w-1/2 aspect-video rounded-lg shadow-lg"
+        src="https://drive.google.com/file/d/1E6YE7hO84SflDw_XLbRl_uTzJI1YXTjE/preview" 
+        title="Bank Loan" allowfullscreen>
+      </iframe>
+    </div>
+
+    <a href="ppt\Bank Loan.pptx" class="mt-6 inline-block bg-blue-600 text-white px-6 py-3 rounded-lg shadow hover:bg-blue-700 transition">
+      View Project
+    </a>
+  </section>
+
+  <!-- Storytelling Section -->
+  <section id="story" class="p-8 bg-gray-100">
+    <h2 class="section-title text-center" style="font-size:21px; margin-bottom: 2%;">Storytelling with KPIs</h2>
+    <div class="grid gap-8 md:grid-cols-2 max-w-6xl mx-auto">
+      <!-- KPI 1 -->
+      <div class="bg-white p-6 rounded-2xl shadow hover:shadow-md transition">
+        <h3 class="text-xl font-semibold text-blue-700 mb-2">1. Year Wise Loan Amount</h3>
+        <img src="images/Bank Loan_Slide1.png" alt="Loan Stats" class="rounded-lg w-full">
+        <p class="text-gray-600 mb-4">The Loan amount is directly proportional with the increasing years.<br><br>
+It is continuously increasing by each year as you see it‘s varies from 2.22M to 260.51M between the years 2007 to 2011.<br><br>
+From the year 2009, The changes in loan amount is suddenly increased with a higher rate that is around 5 times higher rate for next 2 years as compared to previous 2 years.</p>
+      </div>
+
+      <!-- KPI 2 -->
+      <div class="bg-white p-6 rounded-2xl shadow hover:shadow-md transition">
+        <h3 class="text-xl font-semibold text-blue-700 mb-2">2. Grade & Sub-Grade wise revolving balance</h3>
+        <img src="images/Bank Loan_Slide2.png" alt="Revolving Bal" class="rounded-lg w-full">
+        <p class="text-gray-600 mb-4">There are 7 main grades and it‘s further consists of 5 sub-grades, It is sown by different colours in the representation from grade A to G. <br><br>
+        The average revolving balance is higher in the ‘grade B’ its around 29M and the maximum reaches in the ‘sub-grade B1’ that is 39M, Same like the average lower revolving balance is in ‘grade G’ its around 1200K and the minimum reaches in the ‘sub-grade G5’ that is 701k.
+       </p>
+      </div>
+
+      <!-- KPI 3 -->
+      <div class="bg-white p-6 rounded-2xl shadow hover:shadow-md transition">
+        <h3 class="text-xl font-semibold text-blue-700 mb-2">3. Total Payment by Verified & Non-Verified Status</h3>
+        <img src="images/Bank Loan_Slide3.png" class="rounded-lg w-full">
+        <p class="text-gray-600 mb-4">The total payment for verified account is higher as compared to non-verified.<br><br>
+        There are 58.88% verified accounts and remaining 41.12% are non-verified.
+        </p>
+      </div>
+
+      <!-- KPI 4 -->
+      <div class="bg-white p-6 rounded-2xl shadow hover:shadow-md transition">
+        <h3 class="text-xl font-semibold text-blue-700 mb-2">4. State wise loan status</h3>
+        <img src="images/Bank Loan_Slide4.png" class="rounded-lg w-full">
+        <p class="text-gray-600 mb-4">In the dataset we have 50 state, along with the 3 type of loan status. That is changed off, current and fully paid.<br><br>
+        As seen in the representation, State ‘CA’ has the highest number of accounts in each type of lone status specially fully paid accounts. And state ‘ME’ has the lowest number of accounts in each type of lone status.
+        </p>
+      </div>
+
+      <!-- KPI 5 -->
+      <div class="bg-white p-6 rounded-2xl shadow hover:shadow-md transition">
+        <h3 class="text-xl font-semibold text-blue-700 mb-2">5. Month wise loan status</h3>
+        <img src="images/Bank Loan_Slide5.png" class="rounded-lg w-full">
+        <p class="text-gray-600 mb-4">In the representation, Different colours of line shows the 3 type of lone status between the 12 months. That is red line indicates the changed off, yellow line indicates the current and green line indicates the fully paid.
+        <br><br>
+        The highest number of fully paid accounts is in the month of ‘March’ that is 3331 and lowest is in the month of ‘September’.
+        <br><br>
+        Same like this we can easily find the variations of number of accounts for other 2 type of loan status with the month wise.
+        </p>
+      </div>
+
+      <!-- KPI 6 -->
+      <div class="bg-white p-6 rounded-2xl shadow hover:shadow-md transition">
+        <h3 class="text-xl font-semibold text-blue-700 mb-2">6. Home ownership Vs last payment date stats</h3>
+        <img src="images/Bank Loan_Slide6.png" alt="sales performance" class="rounded-lg w-full">
+        <p class="text-gray-600 mb-4">Home ownership consists of the 3 types that is mortgage, own and rent indicted by different colours blue, brown and orange respectively.<br><br>
+        In the bar plot of representation, The type of amount of Home ownership varies from 2008 to 2016. And the maximum amount reaches in year 2012, That is around 31M. And the minimum amount is in 2008.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Conclusion -->
+  <section class="p-8 bg-white text-center shadow-inner">
+    <h2 class="section-title" style="font-size:18px;">Conclusion</h2>
+    <p class="max-w-3xl mx-auto text-gray-700 leading-relaxed text-left">
+      The dashboard reveals strong loan growth and healthy repayment trends. Most customers have fully paid their loans, particularly in verified and mid-tier categories. California leads in loan volume, and verified borrowers show better payment behavior. Overall, the bank’s loan portfolio demonstrates effective risk management and consistent performance with manageable losses.
+    </p>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gradient-to-r from-blue-700 to-indigo-800 text-white text-center p-4 mt-8">
+    <p>Created by <span class="font-semibold">Yash Gode</span></p>
+  </footer>
+
+</body>
+</html>

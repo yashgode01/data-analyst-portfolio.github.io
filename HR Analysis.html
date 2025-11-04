@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HR Analysis | Yash Gode</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      scroll-behavior: smooth;
+    }
+    .section-title {
+      @apply text-3xl font-bold text-center mb-6 text-blue-700;
+    }
+  </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+  <!-- Header -->
+  <header class="bg-gradient-to-r from-blue-700 to-indigo-800 text-white p-4 flex flex-col sm:flex-row items-center justify-between shadow-md">
+    <div class="flex items-center space-x-3">
+      <h1 class="text-2xl font-bold tracking-wide">HR Attrition Report Analysis</h1>
+    </div>
+  </header>
+
+  <!-- Project Description -->
+  <section class="p-8 text-center bg-white shadow-sm">
+    <!-- <h2 class="section-title">Project Overview</h2> -->
+    <p class="max-w-2xl mx-auto text-gray-600 mb-6 text-left">
+      This HR Attrition Dashboard provides a comprehensive overview of employee attrition trends across the organization. It highlights key workforce metrics such as total employees, attrition count, active employees, average age, and overall attrition rate. The dashboard analyzes attrition patterns by department, job role, gender, age group, average salary, and business travel frequency — helping HR professionals identify areas with high turnover and underlying factors driving employee exits.
+    </p>
+    
+    <!-- Video -->
+    <div class="flex justify-center">
+      <iframe class="w-full sm:w-3/4 lg:w-1/2 aspect-video rounded-lg shadow-lg"
+        src="https://drive.google.com/file/d/1MmvM1Q-BPmJgoEH8oV6iE9ZXatTG2_u_/preview" 
+        title="Sales Project Demo" allowfullscreen>
+      </iframe>
+    </div>
+
+    <a href="https://public.tableau.com/views/HRAttritionDashboard_17484587992950/Dashboard?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link" class="mt-6 inline-block bg-blue-600 text-white px-6 py-3 rounded-lg shadow hover:bg-blue-700 transition">
+      View Project
+    </a>
+  </section>
+
+  <!-- Storytelling Section -->
+  <section id="story" class="p-8 bg-gray-100">
+    <h2 class="section-title text-center" style="font-size:21px; margin-bottom: 2%;">Storytelling with KPIs</h2>
+    <div class="grid gap-8 md:grid-cols-2 max-w-6xl mx-auto">
+      <!-- KPI 1 -->
+      <div class="bg-white p-6 rounded-2xl shadow hover:shadow-md transition">
+        <h3 class="text-xl font-semibold text-blue-700 mb-2">1. Attrition by Department</h3>
+        <img src="images/Hr_Slide1.jpg" alt="Loan Stats" class="rounded-lg w-full">
+        <p class="text-gray-600 mb-4">This chart displays the attrition rate across various departments.
+
+        <br><br>
+
+        The Sales Department shows the highest attrition rate (8.45K), followed closely by Human Resources (8.42K) and Software (8.34K).<br>
+
+        The Hardware Department records the lowest attrition rate (8.17K).<br><br>
+
+        Insight:
+        High attrition in Sales and HR could be due to performance pressure, workload, or competitive job markets.
+        Lower attrition in Hardware indicates better stability or job satisfaction in that function. <br><br>
+
+        Key Message:
+        “Sales and HR departments require immediate attention to address retention issues.”</p>
+      </div>
+
+      <!-- KPI 2 -->
+      <div class="bg-white p-6 rounded-2xl shadow hover:shadow-md transition">
+        <h3 class="text-xl font-semibold text-blue-700 mb-2">2. Attrition by Job Role</h3>
+        <img src="images/Hr_Slide2.jpg" alt="Revolving Bal" class="rounded-lg w-full">
+        <p class="text-gray-600 mb-4">This visualization shows attrition distribution across job roles.<br><br>
+
+         Sales Executive, Manager, and Research roles have higher attrition, all above 5K.<br>
+
+         Laboratory Technicians and Human-related roles show noticeable attrition as well.<br><br>
+
+         Insight:
+         High turnover in Sales Executives and Research roles indicates potential dissatisfaction due to targets, workload, or career growth opportunities. <br><br>
+
+         Key Message:
+         “Targeted retention plans for Sales and R&D professionals are essential to reduce overall attrition.”
+       </p>
+      </div>
+
+      <!-- KPI 3 -->
+      <div class="bg-white p-6 rounded-2xl shadow hover:shadow-md transition">
+        <h3 class="text-xl font-semibold text-blue-700 mb-2">3. Average Salary by Department</h3>
+        <img src="images/Hr_Slide3.jpg" class="rounded-lg w-full">
+        <p class="text-gray-600 mb-4">This bar chart compares the average monthly salary across departments.<br><br>
+
+        Hardware, Software, and Support departments have the highest average monthly income ($26.03K).<br>
+
+        Human Resources and R&D earn slightly less (around $25.80K).<br><br>
+
+        Insight:
+        Despite similar salary levels, Sales and HR still show high attrition, suggesting that compensation alone isn’t the key factor - work environment, recognition, and growth may also play roles.<br><br>
+
+        Key Message:
+        “Employee engagement and work culture improvements are crucial beyond just salary adjustments.”
+        </p>
+      </div>
+
+      <!-- KPI 4 -->
+      <div class="bg-white p-6 rounded-2xl shadow hover:shadow-md transition">
+        <h3 class="text-xl font-semibold text-blue-700 mb-2">4. Age Group wise Attrition</h3>
+        <img src="images/Hr_Slide4.jpg" class="rounded-lg w-full">
+        <p class="text-gray-600 mb-4">This slide shows the distribution of attrition across different age groups in the organization.<br><br>
+
+        Analysis:
+
+        The 18–25 age group has the highest attrition (9.43K), which is significantly above all other age groups.<br>
+
+        Attrition numbers for other age ranges (26–60) remain fairly consistent, around 5.7K–5.9K.<br>
+
+        This suggests that younger employees tend to leave the organization more frequently than mid-age or senior employees.<br><br>
+
+        Insight:
+        High attrition among younger employees could indicate:<br>
+
+        Lack of career growth or engagement early in tenure.<br>
+
+        Better opportunities in the market for entry-level roles.<br>
+
+        A need to strengthen onboarding, mentorship, or early career retention strategies.
+        </p>
+      </div>
+
+      <!-- KPI 5 -->
+      <div class="bg-white p-6 rounded-2xl shadow hover:shadow-md transition">
+        <h3 class="text-xl font-semibold text-blue-700 mb-2">5. Employee by Business Travel</h3>
+        <img src="images/Hr_Slide5.jpg" class="rounded-lg w-full">
+        <p class="text-gray-600 mb-4 mt-2">This pie chart represents the distribution of employees based on business travel frequency.<br><br>
+
+       Analysis:
+
+       The data is nearly evenly distributed across three categories - each around 33%.<br>
+
+       This means roughly one-third of employees travel frequently, one-third travel occasionally, and one-third rarely travel (or do not travel).<br><br>
+
+       Insight:
+
+       The balanced travel distribution indicates that business travel is evenly required across job roles.<br>
+
+       HR can analyze whether travel frequency has any correlation with attrition or job satisfaction - for example, frequent travel might cause burnout, or limited travel could reduce exposure and motivation.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Conclusion -->
+  <section class="p-8 bg-white text-center shadow-inner">
+    <h2 class="section-title" style="font-size:18px;">Conclusion</h2>
+    <p class="max-w-3xl mx-auto text-gray-700 leading-relaxed text-left">
+      The HR Attrition Dashboard reveals a high overall attrition rate of 50.21%, indicating a serious retention challenge within the organization. Attrition is almost equally distributed between male and female employees, suggesting that gender is not a major influencing factor. Departments such as Sales, Human Resources, and Software show the highest attrition levels, possibly due to high workload or limited career growth opportunities.<br><br>
+
+      The 18–25 age group experiences the highest attrition, indicating younger employees may be leaving early in their careers for better opportunities. Despite similar average salaries across departments, the consistent attrition trend suggests that factors beyond compensation—such as job satisfaction, growth prospects, or work-life balance—may be driving turnover.<br><br>
+
+      Overall, the company should focus on employee engagement, career development programs, and retention strategies targeted at high-attrition departments and younger workforce segments to reduce turnover and enhance organizational stability.
+    </p>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gradient-to-r from-blue-700 to-indigo-800 text-white text-center p-4 mt-8">
+    <p>Created by <span class="font-semibold">Yash Gode</span></p>
+  </footer>
+
+</body>
+</html>
